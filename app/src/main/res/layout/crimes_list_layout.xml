@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/crime_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="32sp"
+            android:textColor="@color/black"
+        />
+
+        <ImageView
+            android:id="@+id/crime_resolved_image"
+            android:src="@drawable/handcuffs"
+            android:alpha="0"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/handcuffs" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/index_label"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/crime_student_index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

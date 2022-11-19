@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00BCD4"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/crime_title_details"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:id="@+id/crime_resolved_image_details"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:alpha="0"
+            android:src="@drawable/handcuffs"
+            android:contentDescription="@string/handcuffs" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/index_label"
+            android:layout_weight="1"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/crime_student_index_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/crime_description_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECECEC"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textSize="32sp" />
+
+</LinearLayout>
